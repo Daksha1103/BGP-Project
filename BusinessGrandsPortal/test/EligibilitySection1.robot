@@ -156,6 +156,7 @@ US-3 TC01 Proposal Page and Save
     Personal Address Info
     Click Button      ${NEXT}
     Sleep    2
+    # Proposal Page
     Input Text    id=react-project-title    ${PROJECT TITLE}  
     Input Text    id=react-project-start_date    ${START_DATE}
     Input Text    id=react-project-end_date    ${END_DATE}    
@@ -173,10 +174,11 @@ US-3 TC01 Proposal Page and Save
    # Choose File    xpath://button[@id='react-project-attachments-btn']   ${EXECDIR}${/}Images${/}MRT.jpg
    # Choose File    xpath://input[@type='file']    ${EXECDIR}${/}Images${/}MRT.jpg
    Choose File    xpath://input[@type='file']   ${EXECDIR}${/}Images{/}MRT.jpg
-    Sleep    10
+   Sleep    10
    Click Button     ${SAVE} 
    Click Button     ${NEXT}
-      
+   
+   
 
     Log    TestComplete 
     
