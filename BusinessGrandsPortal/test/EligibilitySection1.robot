@@ -6,7 +6,12 @@ ${Browser}    Chrome
 ${URL}    https://public:Let$BeC001@bgp-qa.gds-gov.tech/
 # ${NameTextBox}    xpath://input[@id='react-contact_info-name']    
 # &{Contact_Info}    Name=David    Job Title=Marketing Manager    Contact No=91223344    Email=David11@gmail.com    Alt Personal Email=David22@gmail.com   
+${NRIC}    S1234567A
+${NAME}    Tan Ah Kow
+${UEN}    BGPQEDEMO
+
 ${CONTACT_NAME}     xpath://input[@id='react-contact_info-name']
+
 ${CONTACT_DESIGNATION}    xpath://input[@id='react-contact_info-designation']
 ${CONTACT_PHONE_NO}    xpath://input[@id='react-contact_info-phone']
 ${CONTACT_EMAIL_ID}    xpath://input[@id='react-contact_info-primary_email'] 
@@ -44,9 +49,9 @@ ${OVERSEAS_INVEST_3}    400,000
 *** Keywords ***
 LoginBGP
    [Documentation]    Login credentials for BGP
-   Input Text    name=CPUID    S1234567A
-   Input Text    name=CPUID_FullName   Tan Ah Kow   
-   Input Text    name=CPEntID    BGPQEDEMO    
+   Input Text    name=CPUID    ${NRIC}
+   Input Text    name=CPUID_FullName   ${NAME}   
+   Input Text    name=CPEntID    ${UEN}    
    Select From List By Label   CPRole     Acceptor       
    Click Button    xpath://div[2]/form[2]/button[@type='submit'] 
    
@@ -54,7 +59,6 @@ BrowserOpen
    Open Browser    ${URL}    ${Browser}
    Maximize Browser Window
    Set Browser Implicit Wait    5
-   # Capture Page Screenshot
    Click Element    id=login-button
    
 ApplicantLogin
@@ -214,15 +218,32 @@ US-3 TC01 Proposal Page and Save
     
     Click Element    xpath://label[2]//span[1]
     Input Text     id=react-project_cost-vendors-0-vendor_name    Adrian Tan
-    Choose File    xpath://input[@type='file']   ${EXECDIR}${/}${Image_Path}${/}${File_Name} 
+    Choose File    xpath://input[@type='file']   ${EXECDIR}${/}${Image_Path}${/}${File_Name}
+    Sleep    5 
     Input Text    id=react-project_cost-vendors-0-amount_in_billing_currency    100,000,000
     Input Text    id=react-project_cost-remarks    No Remarks
     Click Button     ${SAVE} 
     Click Button     ${NEXT}
     
+    # DECLARE & ACKNOWLEDGE TERMS
+    # Click Element    id=react-declaration-criminal_liability_check-false
+    Click Element    xpath://li[1]//div[1]//div[2]//label[1]//span[1]
+    Click Element    xpath://li[2]//div[1]//div[2]//label[1]//span[1]
+    Click Element    xpath://li[3]//div[1]//div[2]//label[1]//span[1]
+    Click Element    xpath://li[4]//div[1]//div[2]//label[1]//span[1]
+    Click Element    xpath://li[5]//div[1]//div[2]//label[1]//span[1]
+    Click Element    xpath://li[6]//div[1]//div[2]//label[1]//span[1]
+    Click Element    xpath://li[7]//div[1]//div[2]//label[1]//span[1]
+    Click Element    xpath://li[8]//div[1]//div[2]//label[2]//span[1]
+    Click Element    xpath://li[9]//div[1]//div[2]//label[2]//span[1]
+    Click Element    xpath://input[@id='react-declaration-consent_acknowledgement_check']
+    Click Button     ${SAVE} 
+    Click Button     id=review-btn
+    Click Element    id=react-declaration-info_truthfulness_check
+    Click Button    id=submit-btn
     
-
- 
+    
+    
    Log    TestComplete 
    
 
