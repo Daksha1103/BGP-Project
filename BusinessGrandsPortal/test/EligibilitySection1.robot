@@ -25,6 +25,21 @@ ${Percentage Shareholdings}    70
 ${REMARKS}    Remarks on Projects
 ${NEXT}    id=next-btn
 ${SAVE}    id=save-btn 
+${Image_Path}   Images
+${File_Name}    MRT.jpg
+${FY_END_DATE}    30 Jun 2020
+${OVERSEAS_SALES_1}    100,000
+${OVERSEAS_SALES_2}    200,000
+${OVERSEAS_SALES_3}    300,000
+${OVERSEAS_SALES_4}    350,000
+${OVERSEAS_INVEST_0}    170,000
+${OVERSEAS_INVEST_1}    200,000
+${OVERSEAS_INVEST_2}    350,000
+${OVERSEAS_INVEST_3}    400,000
+
+
+
+
 
 *** Keywords ***
 LoginBGP
@@ -169,17 +184,47 @@ US-3 TC01 Proposal Page and Save
    Click Element   xpath://span[@id='react-select-project-primary_market--value']
    Click Element   xpath://div[text()='India']  
    Click Element   xpath://div[@class='controls bgp-radio-text-format']//label[1]//span[1]  
-   
-   # Choose File   id=react-project-attachments-btn   ${EXECDIR}${/}Images{/}MRT.jpg
-   # Choose File    xpath://button[@id='react-project-attachments-btn']   ${EXECDIR}${/}Images${/}MRT.jpg
-   # Choose File    xpath://input[@type='file']    ${EXECDIR}${/}Images${/}MRT.jpg
-   Choose File    xpath://input[@type='file']   ${EXECDIR}${/}Images{/}MRT.jpg
+   Choose File    xpath://input[@type='file']   ${EXECDIR}${/}${Image_Path}${/}${File_Name} 
    Sleep    10
+   Input Text    id=react-project-remarks    No Remarks
    Click Button     ${SAVE} 
    Click Button     ${NEXT}
    
+   # EXPLAIN THE BUSINESS IMPACT
+   Input Text    id=react-project_impact-fy_end_date_0    ${FY_END_DATE}
+   Input Text    id=react-project_impact-overseas_sales_0    ${OVERSEAS_SALES_1}
+   Input Text    id=react-project_impact-overseas_sales_1    ${OVERSEAS_SALES_2}
+   Input Text    id=react-project_impact-overseas_sales_2    ${OVERSEAS_SALES_3}
+   Input Text    id=react-project_impact-overseas_sales_3    ${OVERSEAS_SALES_4}
+
+   Input Text    id=react-project_impact-overseas_investments_0    ${OVERSEAS_INVEST_0}
+   Input Text    id=react-project_impact-overseas_investments_1    ${OVERSEAS_INVEST_1}
+   Input Text    id=react-project_impact-overseas_investments_2    ${OVERSEAS_INVEST_2}
+   Input Text    id=react-project_impact-overseas_investments_3    ${OVERSEAS_INVEST_3}
+  
+   Sleep    2     
+   Input Text    id=react-project_impact-rationale_remarks    To develop business
+   Input Text    id= react-project_impact-benefits_remarks    To Publicity
+   Click Button     ${SAVE} 
+   Click Button     ${NEXT}
+   Sleep    2
+   # PROVIDE DETAILS OF COSTS
+    Click Element    id=react-project_cost-vendors-accordion-header
+    Click Element    id=react-project_cost-vendors-add-item
+    
+    Click Element    xpath://label[2]//span[1]
+    Input Text     id=react-project_cost-vendors-0-vendor_name    Adrian Tan
+    Choose File    xpath://input[@type='file']   ${EXECDIR}${/}${Image_Path}${/}${File_Name} 
+    Input Text    id=react-project_cost-vendors-0-amount_in_billing_currency    100,000,000
+    Input Text    id=react-project_cost-remarks    No Remarks
+    Click Button     ${SAVE} 
+    Click Button     ${NEXT}
+    
+    
+
+ 
+   Log    TestComplete 
    
 
-    Log    TestComplete 
     
           

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200603 17:35:55.538" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200603 22:26:37.169" rpa="false">
 <suite id="s1" name="BusinessGrandsPortal" source="C:\Users\daksh\git\BGP-Project\BusinessGrandsPortal">
 <suite id="s1-s1" name="Test" source="C:\Users\daksh\git\BGP-Project\BusinessGrandsPortal\test">
 <suite id="s1-s1-s1" name="EligibilitySection1" source="C:\Users\daksh\git\BGP-Project\BusinessGrandsPortal\test\EligibilitySection1.robot">
@@ -13,29 +13,29 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20200603 17:35:55.733" level="INFO">Opening browser 'Chrome' to base url 'https://public:Let$BeC001@bgp-qa.gds-gov.tech/'.</msg>
-<status status="PASS" starttime="20200603 17:35:55.733" endtime="20200603 17:35:59.594"></status>
+<msg timestamp="20200603 22:26:37.379" level="INFO">Opening browser 'Chrome' to base url 'https://public:Let$BeC001@bgp-qa.gds-gov.tech/'.</msg>
+<status status="PASS" starttime="20200603 22:26:37.379" endtime="20200603 22:26:41.505"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200603 17:35:59.594" endtime="20200603 17:36:01.712"></status>
+<status status="PASS" starttime="20200603 22:26:41.505" endtime="20200603 22:26:43.617"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200603 17:36:01.713" endtime="20200603 17:36:01.715"></status>
+<status status="PASS" starttime="20200603 22:26:43.617" endtime="20200603 22:26:43.619"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id=login-button</arg>
 </arguments>
-<msg timestamp="20200603 17:36:01.716" level="INFO">Clicking element 'id=login-button'.</msg>
-<status status="PASS" starttime="20200603 17:36:01.716" endtime="20200603 17:36:02.372"></status>
+<msg timestamp="20200603 22:26:43.619" level="INFO">Clicking element 'id=login-button'.</msg>
+<status status="PASS" starttime="20200603 22:26:43.619" endtime="20200603 22:26:43.952"></status>
 </kw>
-<status status="PASS" starttime="20200603 17:35:55.732" endtime="20200603 17:36:02.373"></status>
+<status status="PASS" starttime="20200603 22:26:37.378" endtime="20200603 22:26:43.952"></status>
 </kw>
 <kw name="LoginBGP">
 <doc>Login credentials for BGP</doc>
@@ -45,8 +45,8 @@
 <arg>name=CPUID</arg>
 <arg>S1234567A</arg>
 </arguments>
-<msg timestamp="20200603 17:36:02.374" level="INFO">Typing text 'S1234567A' into text field 'name=CPUID'.</msg>
-<status status="PASS" starttime="20200603 17:36:02.373" endtime="20200603 17:36:02.464"></status>
+<msg timestamp="20200603 22:26:43.953" level="INFO">Typing text 'S1234567A' into text field 'name=CPUID'.</msg>
+<status status="PASS" starttime="20200603 22:26:43.953" endtime="20200603 22:26:44.038"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -54,8 +54,8 @@
 <arg>name=CPUID_FullName</arg>
 <arg>Tan Ah Kow</arg>
 </arguments>
-<msg timestamp="20200603 17:36:02.465" level="INFO">Typing text 'Tan Ah Kow' into text field 'name=CPUID_FullName'.</msg>
-<status status="PASS" starttime="20200603 17:36:02.465" endtime="20200603 17:36:02.536"></status>
+<msg timestamp="20200603 22:26:44.038" level="INFO">Typing text 'Tan Ah Kow' into text field 'name=CPUID_FullName'.</msg>
+<status status="PASS" starttime="20200603 22:26:44.038" endtime="20200603 22:26:44.105"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -63,8 +63,8 @@
 <arg>name=CPEntID</arg>
 <arg>BGPQEDEMO</arg>
 </arguments>
-<msg timestamp="20200603 17:36:02.537" level="INFO">Typing text 'BGPQEDEMO' into text field 'name=CPEntID'.</msg>
-<status status="PASS" starttime="20200603 17:36:02.536" endtime="20200603 17:36:02.613"></status>
+<msg timestamp="20200603 22:26:44.105" level="INFO">Typing text 'BGPQEDEMO' into text field 'name=CPEntID'.</msg>
+<status status="PASS" starttime="20200603 22:26:44.105" endtime="20200603 22:26:44.177"></status>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
@@ -72,20 +72,20 @@
 <arg>CPRole</arg>
 <arg>Acceptor</arg>
 </arguments>
-<msg timestamp="20200603 17:36:02.614" level="INFO">Selecting options from selection list 'CPRole' by label Acceptor.</msg>
-<status status="PASS" starttime="20200603 17:36:02.613" endtime="20200603 17:36:02.646"></status>
+<msg timestamp="20200603 22:26:44.178" level="INFO">Selecting options from selection list 'CPRole' by label Acceptor.</msg>
+<status status="PASS" starttime="20200603 22:26:44.177" endtime="20200603 22:26:44.210"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[2]/form[2]/button[@type='submit']</arg>
 </arguments>
-<msg timestamp="20200603 17:36:02.646" level="INFO">Clicking button 'xpath://div[2]/form[2]/button[@type='submit']'.</msg>
-<status status="PASS" starttime="20200603 17:36:02.646" endtime="20200603 17:36:03.005"></status>
+<msg timestamp="20200603 22:26:44.211" level="INFO">Clicking button 'xpath://div[2]/form[2]/button[@type='submit']'.</msg>
+<status status="PASS" starttime="20200603 22:26:44.211" endtime="20200603 22:26:44.550"></status>
 </kw>
-<status status="PASS" starttime="20200603 17:36:02.373" endtime="20200603 17:36:03.005"></status>
+<status status="PASS" starttime="20200603 22:26:43.952" endtime="20200603 22:26:44.551"></status>
 </kw>
-<status status="PASS" starttime="20200603 17:35:55.732" endtime="20200603 17:36:03.006"></status>
+<status status="PASS" starttime="20200603 22:26:37.378" endtime="20200603 22:26:44.551"></status>
 </kw>
 <kw name="Grant Access Eligibility and Save">
 <doc>Eligibility 5 questions for applicant to get new grant and save</doc>
@@ -96,173 +96,173 @@
 <arguments>
 <arg>15</arg>
 </arguments>
-<status status="PASS" starttime="20200603 17:36:03.006" endtime="20200603 17:36:03.007"></status>
+<status status="PASS" starttime="20200603 22:26:44.551" endtime="20200603 22:26:44.552"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://h4[text()='Get new grant']</arg>
 </arguments>
-<msg timestamp="20200603 17:36:03.008" level="INFO">Clicking element 'xpath://h4[text()='Get new grant']'.</msg>
-<status status="PASS" starttime="20200603 17:36:03.008" endtime="20200603 17:36:17.665"></status>
+<msg timestamp="20200603 22:26:44.553" level="INFO">Clicking element 'xpath://h4[text()='Get new grant']'.</msg>
+<status status="PASS" starttime="20200603 22:26:44.553" endtime="20200603 22:26:57.130"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200603 17:36:20.667" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200603 17:36:17.665" endtime="20200603 17:36:20.667"></status>
+<msg timestamp="20200603 22:27:00.133" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200603 22:26:57.130" endtime="20200603 22:27:00.133"></status>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <doc>Executes the given JavaScript code with possible arguments.</doc>
 <arguments>
 <arg>window.scrollTo(0,1500)</arg>
 </arguments>
-<msg timestamp="20200603 17:36:20.668" level="INFO">Executing JavaScript:
+<msg timestamp="20200603 22:27:00.135" level="INFO">Executing JavaScript:
 window.scrollTo(0,1500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20200603 17:36:20.668" endtime="20200603 17:36:20.677"></status>
+<status status="PASS" starttime="20200603 22:27:00.134" endtime="20200603 22:27:00.153"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[contains(text(),'IT')]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:20.678" level="INFO">Clicking element 'xpath://div[contains(text(),'IT')]'.</msg>
-<status status="PASS" starttime="20200603 17:36:20.677" endtime="20200603 17:36:20.738"></status>
+<msg timestamp="20200603 22:27:00.153" level="INFO">Clicking element 'xpath://div[contains(text(),'IT')]'.</msg>
+<status status="PASS" starttime="20200603 22:27:00.153" endtime="20200603 22:27:00.224"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200603 17:36:22.740" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200603 17:36:20.739" endtime="20200603 17:36:22.740"></status>
+<msg timestamp="20200603 22:27:02.226" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:00.225" endtime="20200603 22:27:02.226"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[contains(text(),'Bring my business overseas or establish a stronger')]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:22.741" level="INFO">Clicking element 'xpath://div[contains(text(),'Bring my business overseas or establish a stronger')]'.</msg>
-<status status="PASS" starttime="20200603 17:36:22.740" endtime="20200603 17:36:22.785"></status>
+<msg timestamp="20200603 22:27:02.227" level="INFO">Clicking element 'xpath://div[contains(text(),'Bring my business overseas or establish a stronger')]'.</msg>
+<status status="PASS" starttime="20200603 22:27:02.227" endtime="20200603 22:27:02.279"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[contains(text(),'Market Readiness Assistance')]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:22.786" level="INFO">Clicking element 'xpath://div[contains(text(),'Market Readiness Assistance')]'.</msg>
-<status status="PASS" starttime="20200603 17:36:22.785" endtime="20200603 17:36:22.839"></status>
+<msg timestamp="20200603 22:27:02.280" level="INFO">Clicking element 'xpath://div[contains(text(),'Market Readiness Assistance')]'.</msg>
+<status status="PASS" starttime="20200603 22:27:02.280" endtime="20200603 22:27:02.334"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200603 17:36:24.841" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200603 17:36:22.839" endtime="20200603 17:36:24.842"></status>
+<msg timestamp="20200603 22:27:04.334" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:02.334" endtime="20200603 22:27:04.334"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://button[@id='go-to-grant']</arg>
 </arguments>
-<msg timestamp="20200603 17:36:24.844" level="INFO">Clicking button 'xpath://button[@id='go-to-grant']'.</msg>
-<status status="PASS" starttime="20200603 17:36:24.842" endtime="20200603 17:36:24.897"></status>
+<msg timestamp="20200603 22:27:04.336" level="INFO">Clicking button 'xpath://button[@id='go-to-grant']'.</msg>
+<status status="PASS" starttime="20200603 22:27:04.335" endtime="20200603 22:27:04.402"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200603 17:36:26.899" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200603 17:36:24.897" endtime="20200603 17:36:26.899"></status>
+<msg timestamp="20200603 22:27:06.403" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:04.402" endtime="20200603 22:27:06.404"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id=keyPage-form-button</arg>
 </arguments>
-<msg timestamp="20200603 17:36:26.899" level="INFO">Clicking element 'id=keyPage-form-button'.</msg>
-<status status="PASS" starttime="20200603 17:36:26.899" endtime="20200603 17:36:27.260"></status>
+<msg timestamp="20200603 22:27:06.406" level="INFO">Clicking element 'id=keyPage-form-button'.</msg>
+<status status="PASS" starttime="20200603 22:27:06.405" endtime="20200603 22:27:06.695"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200603 17:36:29.261" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200603 17:36:27.260" endtime="20200603 17:36:29.261"></status>
+<msg timestamp="20200603 22:27:08.697" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:06.695" endtime="20200603 22:27:08.697"></status>
 </kw>
-<status status="PASS" starttime="20200603 17:36:03.006" endtime="20200603 17:36:29.262"></status>
+<status status="PASS" starttime="20200603 22:26:44.551" endtime="20200603 22:27:08.697"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[4]//div[1]//div[2]//label[1]//span[1]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:29.263" level="INFO">Clicking element 'xpath://div[4]//div[1]//div[2]//label[1]//span[1]'.</msg>
-<status status="PASS" starttime="20200603 17:36:29.262" endtime="20200603 17:36:29.319"></status>
+<msg timestamp="20200603 22:27:08.697" level="INFO">Clicking element 'xpath://div[4]//div[1]//div[2]//label[1]//span[1]'.</msg>
+<status status="PASS" starttime="20200603 22:27:08.697" endtime="20200603 22:27:08.745"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[5]//div[1]//div[2]//label[1]//span[1]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:29.319" level="INFO">Clicking element 'xpath://div[5]//div[1]//div[2]//label[1]//span[1]'.</msg>
-<status status="PASS" starttime="20200603 17:36:29.319" endtime="20200603 17:36:29.366"></status>
+<msg timestamp="20200603 22:27:08.746" level="INFO">Clicking element 'xpath://div[5]//div[1]//div[2]//label[1]//span[1]'.</msg>
+<status status="PASS" starttime="20200603 22:27:08.746" endtime="20200603 22:27:08.801"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[6]//div[1]//div[2]//label[1]//span[1]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:29.367" level="INFO">Clicking element 'xpath://div[6]//div[1]//div[2]//label[1]//span[1]'.</msg>
-<status status="PASS" starttime="20200603 17:36:29.366" endtime="20200603 17:36:29.411"></status>
+<msg timestamp="20200603 22:27:08.802" level="INFO">Clicking element 'xpath://div[6]//div[1]//div[2]//label[1]//span[1]'.</msg>
+<status status="PASS" starttime="20200603 22:27:08.802" endtime="20200603 22:27:08.888"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[7]//div[1]//div[2]//label[1]//span[1]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:29.411" level="INFO">Clicking element 'xpath://div[7]//div[1]//div[2]//label[1]//span[1]'.</msg>
-<status status="PASS" starttime="20200603 17:36:29.411" endtime="20200603 17:36:29.460"></status>
+<msg timestamp="20200603 22:27:08.888" level="INFO">Clicking element 'xpath://div[7]//div[1]//div[2]//label[1]//span[1]'.</msg>
+<status status="PASS" starttime="20200603 22:27:08.888" endtime="20200603 22:27:08.939"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[8]//div[1]//div[2]//label[1]//span[1]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:29.461" level="INFO">Clicking element 'xpath://div[8]//div[1]//div[2]//label[1]//span[1]'.</msg>
-<status status="PASS" starttime="20200603 17:36:29.461" endtime="20200603 17:36:29.511"></status>
+<msg timestamp="20200603 22:27:08.939" level="INFO">Clicking element 'xpath://div[8]//div[1]//div[2]//label[1]//span[1]'.</msg>
+<status status="PASS" starttime="20200603 22:27:08.939" endtime="20200603 22:27:08.990"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${SAVE}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:29.512" level="INFO">Clicking button 'id=save-btn'.</msg>
-<status status="PASS" starttime="20200603 17:36:29.511" endtime="20200603 17:36:29.576"></status>
+<msg timestamp="20200603 22:27:08.990" level="INFO">Clicking button 'id=save-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:08.990" endtime="20200603 22:27:09.053"></status>
 </kw>
-<status status="PASS" starttime="20200603 17:36:03.006" endtime="20200603 17:36:29.576"></status>
+<status status="PASS" starttime="20200603 22:26:44.551" endtime="20200603 22:27:09.053"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200603 17:36:31.577" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200603 17:36:29.576" endtime="20200603 17:36:31.577"></status>
+<msg timestamp="20200603 22:27:11.054" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:09.053" endtime="20200603 22:27:11.055"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${NEXT}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:31.578" level="INFO">Clicking button 'id=next-btn'.</msg>
-<status status="PASS" starttime="20200603 17:36:31.577" endtime="20200603 17:36:31.635"></status>
+<msg timestamp="20200603 22:27:11.057" level="INFO">Clicking button 'id=next-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:11.056" endtime="20200603 22:27:11.120"></status>
 </kw>
 <kw name="Personal Contact Info">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -271,8 +271,8 @@ Without any arguments.</msg>
 <arg>${CONTACT_NAME}</arg>
 <arg>David</arg>
 </arguments>
-<msg timestamp="20200603 17:36:31.636" level="INFO">Typing text 'David' into text field 'xpath://input[@id='react-contact_info-name']'.</msg>
-<status status="PASS" starttime="20200603 17:36:31.636" endtime="20200603 17:36:31.930"></status>
+<msg timestamp="20200603 22:27:11.121" level="INFO">Typing text 'David' into text field 'xpath://input[@id='react-contact_info-name']'.</msg>
+<status status="PASS" starttime="20200603 22:27:11.121" endtime="20200603 22:27:11.380"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -280,8 +280,8 @@ Without any arguments.</msg>
 <arg>${CONTACT_DESIGNATION}</arg>
 <arg>Marketing Manager</arg>
 </arguments>
-<msg timestamp="20200603 17:36:31.931" level="INFO">Typing text 'Marketing Manager' into text field 'xpath://input[@id='react-contact_info-designation']'.</msg>
-<status status="PASS" starttime="20200603 17:36:31.930" endtime="20200603 17:36:32.163"></status>
+<msg timestamp="20200603 22:27:11.380" level="INFO">Typing text 'Marketing Manager' into text field 'xpath://input[@id='react-contact_info-designation']'.</msg>
+<status status="PASS" starttime="20200603 22:27:11.380" endtime="20200603 22:27:11.607"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -289,8 +289,8 @@ Without any arguments.</msg>
 <arg>${CONTACT_PHONE_NO}</arg>
 <arg>91445566</arg>
 </arguments>
-<msg timestamp="20200603 17:36:32.164" level="INFO">Typing text '91445566' into text field 'xpath://input[@id='react-contact_info-phone']'.</msg>
-<status status="PASS" starttime="20200603 17:36:32.163" endtime="20200603 17:36:32.294"></status>
+<msg timestamp="20200603 22:27:11.607" level="INFO">Typing text '91445566' into text field 'xpath://input[@id='react-contact_info-phone']'.</msg>
+<status status="PASS" starttime="20200603 22:27:11.607" endtime="20200603 22:27:11.743"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -298,8 +298,8 @@ Without any arguments.</msg>
 <arg>${CONTACT_EMAIL_ID}</arg>
 <arg>David11@gmail.com</arg>
 </arguments>
-<msg timestamp="20200603 17:36:32.295" level="INFO">Typing text 'David11@gmail.com' into text field 'xpath://input[@id='react-contact_info-primary_email']'.</msg>
-<status status="PASS" starttime="20200603 17:36:32.295" endtime="20200603 17:36:32.482"></status>
+<msg timestamp="20200603 22:27:11.744" level="INFO">Typing text 'David11@gmail.com' into text field 'xpath://input[@id='react-contact_info-primary_email']'.</msg>
+<status status="PASS" starttime="20200603 22:27:11.743" endtime="20200603 22:27:11.936"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -307,10 +307,10 @@ Without any arguments.</msg>
 <arg>${CONTACT_SEC_EMAIL_ID}</arg>
 <arg>David22@gmail.com</arg>
 </arguments>
-<msg timestamp="20200603 17:36:32.482" level="INFO">Typing text 'David22@gmail.com' into text field 'xpath://input[@id='react-contact_info-secondary_email']'.</msg>
-<status status="PASS" starttime="20200603 17:36:32.482" endtime="20200603 17:36:32.683"></status>
+<msg timestamp="20200603 22:27:11.936" level="INFO">Typing text 'David22@gmail.com' into text field 'xpath://input[@id='react-contact_info-secondary_email']'.</msg>
+<status status="PASS" starttime="20200603 22:27:11.936" endtime="20200603 22:27:12.137"></status>
 </kw>
-<status status="PASS" starttime="20200603 17:36:31.635" endtime="20200603 17:36:32.683"></status>
+<status status="PASS" starttime="20200603 22:27:11.120" endtime="20200603 22:27:12.137"></status>
 </kw>
 <kw name="Personal Address Info">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -319,24 +319,24 @@ Without any arguments.</msg>
 <arg>id=react-contact_info-correspondence_address-postal</arg>
 <arg>${POSTAL CODE}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:32.684" level="INFO">Typing text '543318' into text field 'id=react-contact_info-correspondence_address-postal'.</msg>
-<status status="PASS" starttime="20200603 17:36:32.684" endtime="20200603 17:36:32.789"></status>
+<msg timestamp="20200603 22:27:12.138" level="INFO">Typing text '543318' into text field 'id=react-contact_info-correspondence_address-postal'.</msg>
+<status status="PASS" starttime="20200603 22:27:12.137" endtime="20200603 22:27:12.244"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://span[@class='glyphicon glyphicon-search search-icon-logo']</arg>
 </arguments>
-<msg timestamp="20200603 17:36:32.790" level="INFO">Clicking element 'xpath://span[@class='glyphicon glyphicon-search search-icon-logo']'.</msg>
-<status status="PASS" starttime="20200603 17:36:32.790" endtime="20200603 17:36:32.849"></status>
+<msg timestamp="20200603 22:27:12.244" level="INFO">Clicking element 'xpath://span[@class='glyphicon glyphicon-search search-icon-logo']'.</msg>
+<status status="PASS" starttime="20200603 22:27:12.244" endtime="20200603 22:27:12.326"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20200603 17:36:35.851" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200603 17:36:32.850" endtime="20200603 17:36:35.851"></status>
+<msg timestamp="20200603 22:27:15.329" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:12.327" endtime="20200603 22:27:15.330"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -344,8 +344,8 @@ Without any arguments.</msg>
 <arg>id=react-contact_info-correspondence_address-level</arg>
 <arg>${ADD_LEVEL}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:35.853" level="INFO">Typing text '10' into text field 'id=react-contact_info-correspondence_address-level'.</msg>
-<status status="PASS" starttime="20200603 17:36:35.852" endtime="20200603 17:36:35.933"></status>
+<msg timestamp="20200603 22:27:15.331" level="INFO">Typing text '10' into text field 'id=react-contact_info-correspondence_address-level'.</msg>
+<status status="PASS" starttime="20200603 22:27:15.330" endtime="20200603 22:27:15.407"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -353,8 +353,8 @@ Without any arguments.</msg>
 <arg>id=react-contact_info-correspondence_address-unit</arg>
 <arg>${ADD_UNIT}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:35.933" level="INFO">Typing text '200' into text field 'id=react-contact_info-correspondence_address-unit'.</msg>
-<status status="PASS" starttime="20200603 17:36:35.933" endtime="20200603 17:36:36.010"></status>
+<msg timestamp="20200603 22:27:15.408" level="INFO">Typing text '200' into text field 'id=react-contact_info-correspondence_address-unit'.</msg>
+<status status="PASS" starttime="20200603 22:27:15.407" endtime="20200603 22:27:15.502"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -362,42 +362,42 @@ Without any arguments.</msg>
 <arg>id=react-contact_info-correspondence_address-building_name</arg>
 <arg>${ADD_BUILDING}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:36.010" level="INFO">Typing text '123C' into text field 'id=react-contact_info-correspondence_address-building_name'.</msg>
-<status status="PASS" starttime="20200603 17:36:36.010" endtime="20200603 17:36:36.100"></status>
+<msg timestamp="20200603 22:27:15.503" level="INFO">Typing text '123C' into text field 'id=react-contact_info-correspondence_address-building_name'.</msg>
+<status status="PASS" starttime="20200603 22:27:15.503" endtime="20200603 22:27:15.595"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id:react-contact_info-copied</arg>
 </arguments>
-<msg timestamp="20200603 17:36:36.100" level="INFO">Clicking element 'id:react-contact_info-copied'.</msg>
-<status status="PASS" starttime="20200603 17:36:36.100" endtime="20200603 17:36:36.162"></status>
+<msg timestamp="20200603 22:27:15.596" level="INFO">Clicking element 'id:react-contact_info-copied'.</msg>
+<status status="PASS" starttime="20200603 22:27:15.596" endtime="20200603 22:27:15.638"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${SAVE}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:36.163" level="INFO">Clicking button 'id=save-btn'.</msg>
-<status status="PASS" starttime="20200603 17:36:36.163" endtime="20200603 17:36:36.226"></status>
+<msg timestamp="20200603 22:27:15.639" level="INFO">Clicking button 'id=save-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:15.638" endtime="20200603 22:27:15.691"></status>
 </kw>
-<status status="PASS" starttime="20200603 17:36:32.683" endtime="20200603 17:36:36.226"></status>
+<status status="PASS" starttime="20200603 22:27:12.137" endtime="20200603 22:27:15.692"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${NEXT}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:36.227" level="INFO">Clicking button 'id=next-btn'.</msg>
-<status status="PASS" starttime="20200603 17:36:36.226" endtime="20200603 17:36:36.280"></status>
+<msg timestamp="20200603 22:27:15.692" level="INFO">Clicking button 'id=next-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:15.692" endtime="20200603 22:27:15.743"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20200603 17:36:38.282" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20200603 17:36:36.280" endtime="20200603 17:36:38.283"></status>
+<msg timestamp="20200603 22:27:17.745" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:15.744" endtime="20200603 22:27:17.745"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -405,8 +405,8 @@ Without any arguments.</msg>
 <arg>id=react-project-title</arg>
 <arg>${PROJECT TITLE}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:38.285" level="INFO">Typing text 'GDS' into text field 'id=react-project-title'.</msg>
-<status status="PASS" starttime="20200603 17:36:38.284" endtime="20200603 17:36:38.384"></status>
+<msg timestamp="20200603 22:27:17.747" level="INFO">Typing text 'GDS' into text field 'id=react-project-title'.</msg>
+<status status="PASS" starttime="20200603 22:27:17.746" endtime="20200603 22:27:17.850"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -414,8 +414,8 @@ Without any arguments.</msg>
 <arg>id=react-project-start_date</arg>
 <arg>${START_DATE}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:38.384" level="INFO">Typing text '01 Aug 2020' into text field 'id=react-project-start_date'.</msg>
-<status status="PASS" starttime="20200603 17:36:38.384" endtime="20200603 17:36:38.598"></status>
+<msg timestamp="20200603 22:27:17.851" level="INFO">Typing text '01 Aug 2020' into text field 'id=react-project-start_date'.</msg>
+<status status="PASS" starttime="20200603 22:27:17.851" endtime="20200603 22:27:18.060"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -423,8 +423,8 @@ Without any arguments.</msg>
 <arg>id=react-project-end_date</arg>
 <arg>${END_DATE}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:38.599" level="INFO">Typing text '01 Nov 2020' into text field 'id=react-project-end_date'.</msg>
-<status status="PASS" starttime="20200603 17:36:38.598" endtime="20200603 17:36:38.812"></status>
+<msg timestamp="20200603 22:27:18.061" level="INFO">Typing text '01 Nov 2020' into text field 'id=react-project-end_date'.</msg>
+<status status="PASS" starttime="20200603 22:27:18.061" endtime="20200603 22:27:18.273"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -432,24 +432,24 @@ Without any arguments.</msg>
 <arg>id=react-project-description</arg>
 <arg>The Business Grants Portal is a one-stop portal for businesses to apply for grants according to their needs without having to approach multiple agencies.</arg>
 </arguments>
-<msg timestamp="20200603 17:36:38.813" level="INFO">Typing text 'The Business Grants Portal is a one-stop portal for businesses to apply for grants according to their needs without having to approach multiple agencies.' into text field 'id=react-project-description'.</msg>
-<status status="PASS" starttime="20200603 17:36:38.812" endtime="20200603 17:36:39.877"></status>
+<msg timestamp="20200603 22:27:18.274" level="INFO">Typing text 'The Business Grants Portal is a one-stop portal for businesses to apply for grants according to their needs without having to approach multiple agencies.' into text field 'id=react-project-description'.</msg>
+<status status="PASS" starttime="20200603 22:27:18.273" endtime="20200603 22:27:19.425"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://*[contains(text(), 'Activity')]/../../following-sibling::*//div/div/span/div[contains(text(), 'Select')]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:39.877" level="INFO">Clicking element 'xpath://*[contains(text(), 'Activity')]/../../following-sibling::*//div/div/span/div[contains(text(), 'Select')]'.</msg>
-<status status="PASS" starttime="20200603 17:36:39.877" endtime="20200603 17:36:39.941"></status>
+<msg timestamp="20200603 22:27:19.426" level="INFO">Clicking element 'xpath://*[contains(text(), 'Activity')]/../../following-sibling::*//div/div/span/div[contains(text(), 'Select')]'.</msg>
+<status status="PASS" starttime="20200603 22:27:19.425" endtime="20200603 22:27:19.485"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[text()='Market Entry']</arg>
 </arguments>
-<msg timestamp="20200603 17:36:39.942" level="INFO">Clicking element 'xpath://div[text()='Market Entry']'.</msg>
-<status status="PASS" starttime="20200603 17:36:39.941" endtime="20200603 17:36:40.019"></status>
+<msg timestamp="20200603 22:27:19.486" level="INFO">Clicking element 'xpath://div[text()='Market Entry']'.</msg>
+<status status="PASS" starttime="20200603 22:27:19.486" endtime="20200603 22:27:19.564"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -457,8 +457,8 @@ Without any arguments.</msg>
 <arg>id=react-project-entity_type</arg>
 <arg>${Type of Entity}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:40.019" level="INFO">Typing text 'subsidiary' into text field 'id=react-project-entity_type'.</msg>
-<status status="PASS" starttime="20200603 17:36:40.019" endtime="20200603 17:36:40.155"></status>
+<msg timestamp="20200603 22:27:19.565" level="INFO">Typing text 'subsidiary' into text field 'id=react-project-entity_type'.</msg>
+<status status="PASS" starttime="20200603 22:27:19.564" endtime="20200603 22:27:19.707"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -466,72 +466,310 @@ Without any arguments.</msg>
 <arg>id=react-project-shareholding_percentage</arg>
 <arg>${Percentage Shareholdings}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:40.156" level="INFO">Typing text '70' into text field 'id=react-project-shareholding_percentage'.</msg>
-<status status="PASS" starttime="20200603 17:36:40.156" endtime="20200603 17:36:40.233"></status>
+<msg timestamp="20200603 22:27:19.707" level="INFO">Typing text '70' into text field 'id=react-project-shareholding_percentage'.</msg>
+<status status="PASS" starttime="20200603 22:27:19.707" endtime="20200603 22:27:19.785"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://span[@id='react-select-project-primary_market--value']</arg>
 </arguments>
-<msg timestamp="20200603 17:36:40.233" level="INFO">Clicking element 'xpath://span[@id='react-select-project-primary_market--value']'.</msg>
-<status status="PASS" starttime="20200603 17:36:40.233" endtime="20200603 17:36:40.296"></status>
+<msg timestamp="20200603 22:27:19.786" level="INFO">Clicking element 'xpath://span[@id='react-select-project-primary_market--value']'.</msg>
+<status status="PASS" starttime="20200603 22:27:19.786" endtime="20200603 22:27:19.865"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[text()='India']</arg>
 </arguments>
-<msg timestamp="20200603 17:36:40.297" level="INFO">Clicking element 'xpath://div[text()='India']'.</msg>
-<status status="PASS" starttime="20200603 17:36:40.296" endtime="20200603 17:36:40.356"></status>
+<msg timestamp="20200603 22:27:19.866" level="INFO">Clicking element 'xpath://div[text()='India']'.</msg>
+<status status="PASS" starttime="20200603 22:27:19.865" endtime="20200603 22:27:19.930"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://div[@class='controls bgp-radio-text-format']//label[1]//span[1]</arg>
 </arguments>
-<msg timestamp="20200603 17:36:40.357" level="INFO">Clicking element 'xpath://div[@class='controls bgp-radio-text-format']//label[1]//span[1]'.</msg>
-<status status="PASS" starttime="20200603 17:36:40.356" endtime="20200603 17:36:40.399"></status>
+<msg timestamp="20200603 22:27:19.930" level="INFO">Clicking element 'xpath://div[@class='controls bgp-radio-text-format']//label[1]//span[1]'.</msg>
+<status status="PASS" starttime="20200603 22:27:19.930" endtime="20200603 22:27:19.975"></status>
 </kw>
 <kw name="Choose File" library="SeleniumLibrary">
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
 <arguments>
 <arg>xpath://input[@type='file']</arg>
-<arg>${EXECDIR}${/}Images{/}MRT.jpg</arg>
+<arg>${EXECDIR}${/}${Image_Path}${/}${File_Name}</arg>
 </arguments>
-<msg timestamp="20200603 17:36:40.399" level="INFO">Sending C:\Users\daksh\git\BGP-Project\BusinessGrandsPortal\Images{\}MRT.jpg to browser.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200603 17:36:40.790" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-124.png"&gt;&lt;img src="selenium-screenshot-124.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200603 17:36:40.425" endtime="20200603 17:36:40.790"></status>
+<msg timestamp="20200603 22:27:19.976" level="INFO">Sending C:\Users\daksh\git\BGP-Project\BusinessGrandsPortal\Images\MRT.jpg to browser.</msg>
+<status status="PASS" starttime="20200603 22:27:19.976" endtime="20200603 22:27:20.018"></status>
 </kw>
-<msg timestamp="20200603 17:36:40.799" level="FAIL">InvalidArgumentException: Message: invalid argument: File not found : C:\Users\daksh\git\BGP-Project\BusinessGrandsPortal\Images{/}MRT.jpg
-  (Session info: chrome=81.0.4044.92)
-</msg>
-<status status="FAIL" starttime="20200603 17:36:40.399" endtime="20200603 17:36:40.800"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20200603 22:27:30.021" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:20.019" endtime="20200603 22:27:30.022"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project-remarks</arg>
+<arg>No Remarks</arg>
+</arguments>
+<msg timestamp="20200603 22:27:30.024" level="INFO">Typing text 'No Remarks' into text field 'id=react-project-remarks'.</msg>
+<status status="PASS" starttime="20200603 22:27:30.023" endtime="20200603 22:27:30.194"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${SAVE}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:30.194" level="INFO">Clicking button 'id=save-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:30.194" endtime="20200603 22:27:30.243"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${NEXT}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:30.243" level="INFO">Clicking button 'id=next-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:30.243" endtime="20200603 22:27:30.332"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-fy_end_date_0</arg>
+<arg>${FY_END_DATE}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:30.333" level="INFO">Typing text '30 Jun 2020' into text field 'id=react-project_impact-fy_end_date_0'.</msg>
+<status status="PASS" starttime="20200603 22:27:30.332" endtime="20200603 22:27:30.766"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-overseas_sales_0</arg>
+<arg>${OVERSEAS_SALES_1}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:30.768" level="INFO">Typing text '100,000' into text field 'id=react-project_impact-overseas_sales_0'.</msg>
+<status status="PASS" starttime="20200603 22:27:30.767" endtime="20200603 22:27:30.893"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-overseas_sales_1</arg>
+<arg>${OVERSEAS_SALES_2}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:30.894" level="INFO">Typing text '200,000' into text field 'id=react-project_impact-overseas_sales_1'.</msg>
+<status status="PASS" starttime="20200603 22:27:30.893" endtime="20200603 22:27:31.014"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-overseas_sales_2</arg>
+<arg>${OVERSEAS_SALES_3}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:31.015" level="INFO">Typing text '300,000' into text field 'id=react-project_impact-overseas_sales_2'.</msg>
+<status status="PASS" starttime="20200603 22:27:31.014" endtime="20200603 22:27:31.126"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-overseas_sales_3</arg>
+<arg>${OVERSEAS_SALES_4}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:31.127" level="INFO">Typing text '350,000' into text field 'id=react-project_impact-overseas_sales_3'.</msg>
+<status status="PASS" starttime="20200603 22:27:31.127" endtime="20200603 22:27:31.233"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-overseas_investments_0</arg>
+<arg>${OVERSEAS_INVEST_0}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:31.233" level="INFO">Typing text '170,000' into text field 'id=react-project_impact-overseas_investments_0'.</msg>
+<status status="PASS" starttime="20200603 22:27:31.233" endtime="20200603 22:27:31.365"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-overseas_investments_1</arg>
+<arg>${OVERSEAS_INVEST_1}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:31.366" level="INFO">Typing text '200,000' into text field 'id=react-project_impact-overseas_investments_1'.</msg>
+<status status="PASS" starttime="20200603 22:27:31.365" endtime="20200603 22:27:31.481"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-overseas_investments_2</arg>
+<arg>${OVERSEAS_INVEST_2}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:31.482" level="INFO">Typing text '350,000' into text field 'id=react-project_impact-overseas_investments_2'.</msg>
+<status status="PASS" starttime="20200603 22:27:31.482" endtime="20200603 22:27:31.594"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-overseas_investments_3</arg>
+<arg>${OVERSEAS_INVEST_3}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:31.595" level="INFO">Typing text '400,000' into text field 'id=react-project_impact-overseas_investments_3'.</msg>
+<status status="PASS" starttime="20200603 22:27:31.594" endtime="20200603 22:27:31.715"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200603 22:27:33.717" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:31.715" endtime="20200603 22:27:33.718"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_impact-rationale_remarks</arg>
+<arg>To develop business</arg>
+</arguments>
+<msg timestamp="20200603 22:27:33.719" level="INFO">Typing text 'To develop business' into text field 'id=react-project_impact-rationale_remarks'.</msg>
+<status status="PASS" starttime="20200603 22:27:33.718" endtime="20200603 22:27:33.897"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id= react-project_impact-benefits_remarks</arg>
+<arg>To Publicity</arg>
+</arguments>
+<msg timestamp="20200603 22:27:33.898" level="INFO">Typing text 'To Publicity' into text field 'id= react-project_impact-benefits_remarks'.</msg>
+<status status="PASS" starttime="20200603 22:27:33.897" endtime="20200603 22:27:34.049"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${SAVE}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:34.050" level="INFO">Clicking button 'id=save-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:34.049" endtime="20200603 22:27:34.135"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${NEXT}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:34.136" level="INFO">Clicking button 'id=next-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:34.135" endtime="20200603 22:27:34.216"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200603 22:27:36.218" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200603 22:27:34.217" endtime="20200603 22:27:36.218"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_cost-vendors-accordion-header</arg>
+</arguments>
+<msg timestamp="20200603 22:27:36.220" level="INFO">Clicking element 'id=react-project_cost-vendors-accordion-header'.</msg>
+<status status="PASS" starttime="20200603 22:27:36.219" endtime="20200603 22:27:36.274"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_cost-vendors-add-item</arg>
+</arguments>
+<msg timestamp="20200603 22:27:36.275" level="INFO">Clicking element 'id=react-project_cost-vendors-add-item'.</msg>
+<status status="PASS" starttime="20200603 22:27:36.274" endtime="20200603 22:27:36.378"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://label[2]//span[1]</arg>
+</arguments>
+<msg timestamp="20200603 22:27:36.379" level="INFO">Clicking element 'xpath://label[2]//span[1]'.</msg>
+<status status="PASS" starttime="20200603 22:27:36.378" endtime="20200603 22:27:36.617"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_cost-vendors-0-vendor_name</arg>
+<arg>Adrian Tan</arg>
+</arguments>
+<msg timestamp="20200603 22:27:36.618" level="INFO">Typing text 'Adrian Tan' into text field 'id=react-project_cost-vendors-0-vendor_name'.</msg>
+<status status="PASS" starttime="20200603 22:27:36.617" endtime="20200603 22:27:36.870"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@type='file']</arg>
+<arg>${EXECDIR}${/}${Image_Path}${/}${File_Name}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:36.870" level="INFO">Sending C:\Users\daksh\git\BGP-Project\BusinessGrandsPortal\Images\MRT.jpg to browser.</msg>
+<status status="PASS" starttime="20200603 22:27:36.870" endtime="20200603 22:27:36.922"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_cost-vendors-0-amount_in_billing_currency</arg>
+<arg>100,000,000</arg>
+</arguments>
+<msg timestamp="20200603 22:27:36.923" level="INFO">Typing text '100,000,000' into text field 'id=react-project_cost-vendors-0-amount_in_billing_currency'.</msg>
+<status status="PASS" starttime="20200603 22:27:36.923" endtime="20200603 22:27:37.125"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=react-project_cost-remarks</arg>
+<arg>No Remarks</arg>
+</arguments>
+<msg timestamp="20200603 22:27:37.125" level="INFO">Typing text 'No Remarks' into text field 'id=react-project_cost-remarks'.</msg>
+<status status="PASS" starttime="20200603 22:27:37.125" endtime="20200603 22:27:37.349"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${SAVE}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:37.350" level="INFO">Clicking button 'id=save-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:37.349" endtime="20200603 22:27:37.433"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${NEXT}</arg>
+</arguments>
+<msg timestamp="20200603 22:27:37.433" level="INFO">Clicking button 'id=next-btn'.</msg>
+<status status="PASS" starttime="20200603 22:27:37.433" endtime="20200603 22:27:37.528"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TestComplete</arg>
+</arguments>
+<msg timestamp="20200603 22:27:37.529" level="INFO">TestComplete</msg>
+<status status="PASS" starttime="20200603 22:27:37.528" endtime="20200603 22:27:37.529"></status>
 </kw>
 <doc>An Applicant proposal page</doc>
-<status status="FAIL" starttime="20200603 17:35:55.731" endtime="20200603 17:36:40.800" critical="yes">InvalidArgumentException: Message: invalid argument: File not found : C:\Users\daksh\git\BGP-Project\BusinessGrandsPortal\Images{/}MRT.jpg
-  (Session info: chrome=81.0.4044.92)
-</status>
+<status status="PASS" starttime="20200603 22:26:37.377" endtime="20200603 22:27:37.529" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20200603 17:35:55.585" endtime="20200603 17:36:40.800"></status>
+<status status="PASS" starttime="20200603 22:26:37.220" endtime="20200603 22:27:37.530"></status>
 </suite>
-<status status="FAIL" starttime="20200603 17:35:55.583" endtime="20200603 17:36:40.802"></status>
+<status status="PASS" starttime="20200603 22:26:37.216" endtime="20200603 22:27:37.532"></status>
 </suite>
-<status status="FAIL" starttime="20200603 17:35:55.565" endtime="20200603 17:36:40.802"></status>
+<status status="PASS" starttime="20200603 22:26:37.197" endtime="20200603 22:27:37.534"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="BusinessGrandsPortal">BusinessGrandsPortal</stat>
-<stat pass="0" fail="1" id="s1-s1" name="Test">BusinessGrandsPortal.Test</stat>
-<stat pass="0" fail="1" id="s1-s1-s1" name="EligibilitySection1">BusinessGrandsPortal.Test.EligibilitySection1</stat>
+<stat pass="1" fail="0" id="s1" name="BusinessGrandsPortal">BusinessGrandsPortal</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test">BusinessGrandsPortal.Test</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="EligibilitySection1">BusinessGrandsPortal.Test.EligibilitySection1</stat>
 </suite>
 </statistics>
 <errors>
