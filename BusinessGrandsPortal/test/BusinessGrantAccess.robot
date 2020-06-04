@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary    
 
+
 *** Test Cases ***
 
 Applicant Login to the BGP 
@@ -9,8 +10,8 @@ Applicant Login to the BGP
    When Applicant key in Credentials
    Then Close Browser
    And Log    TestComplete   
-
-# User Story 1 –Eligibility Section, AC-1,AC-2, AC-4, AC-5 are covered under below US-1 TC01 Test case
+   Sleep    2
+# User Story 1 Eligibility Section, AC-1,AC-2, AC-4, AC-5 are covered under below US-1 TC01 Test case
 US-1 TC01 Check for Eligibility Questions for Grant Access
     [Documentation]    Verify Eligibility questions for new grant
     Given I apply for New Grant
@@ -18,11 +19,12 @@ US-1 TC01 Check for Eligibility Questions for Grant Access
     Then Capture Page Screenshot
     # And Close Browser
     Log    TestComplete 
- 
- # User Story 1 –Eligibility Section, AC-4,AC-3, are covered under below US-1 TC02 Test case 
+    Sleep    3
+# User Story 1 Eligibility Section, AC-4,AC-3, are covered under below US-1 TC02 Test case 
 US-1 TC02 Grant Access Not Eligible and open FAQ URL
    [Documentation]    Verify the eligibility section for one negative answer and open new windown for FAQ
    Given I apply for New Grant
+   Sleep    2
    When I Get New Grant
    And Click Element    xpath://*[contains(text(),'Is the applicant registered in Singapore')]/../../following-sibling::*//*[text()='Yes']    
    And Click Element    xpath://*[contains(text(), 'group sales turnover less than or equal to')]/../../following-sibling::*//*[text()='Yes']   
@@ -33,8 +35,8 @@ US-1 TC02 Grant Access Not Eligible and open FAQ URL
    And Capture Page Screenshot
    # Close Browser
    Log    TestComplete 
-
-# User Story 2 –Contact Details Section, AC-1, AC-3, AC-4, AC-5, AC-6 are covered in the below US-2 TC01    
+   Sleep    3 
+# User Story 2 Contact Details Section, AC-1, AC-3, AC-4, AC-5, AC-6 are covered in the below US-2 TC01    
 US-2 TC01 Contact Details Section and save
    [Documentation]    Applicant should be able to input values for the Main Contact Person and Letter of Offeree in the Contact Details page.
    Given I apply for New Grant
@@ -47,8 +49,8 @@ US-2 TC01 Contact Details Section and save
    And Click Button    ${SAVE} 
    # Close Browser
    Log    TestComplete 
-   
-# User Story 2 –Contact Details Section, AC-2 is covered in the below US-2 TC02  Test case
+   Sleep    2
+# User Story 2 Contact Details Section, AC-2 is covered in the below US-2 TC02  Test case
 US-2 TC02 Contact Details Section_Auto_Populate_Corresponding_address and Save
    [Documentation]    Valid Postal code to auto-populate upon clicking on search   
    Given I apply for New Grant
@@ -59,8 +61,8 @@ US-2 TC02 Contact Details Section_Auto_Populate_Corresponding_address and Save
    Then I key in my Personal Address Info
    And Click Button     ${NEXT}
    Log    TestComplete 
-
-# User Story 3(EPIC)–Form Submission AC-1, AC-2, AC-4, AC-5, AC-6 are covered in the below US-3 TC01 Test case
+   Sleep    2
+# User Story 3(EPIC)Form Submission AC-1, AC-2, AC-4, AC-5, AC-6 are covered in the below US-3 TC01 Test case
 US-3 TC01 Form Submission
     [Documentation]    To Verify Applicant to successfully submit the form
     Given I apply for New Grant
@@ -80,8 +82,8 @@ US-3 TC01 Form Submission
     Then Click Element    id=react-declaration-info_truthfulness_check
     And Click Button    id=submit-btn
     Log    TestComplete 
-
-# User Story 3(EPIC)–Form Submission AC-3 is covered in the below US-3 TC01  Test case   
+    Sleep    3
+# User Story 3(EPIC) Form Submission AC-3 is covered in the below US-3 TC01  Test case   
 US-3 TC02 Validation error trigger and the form should redirect to the section 
     
     [Documentation]    To Verify Applicant to successfully submit the form
@@ -104,7 +106,9 @@ US-3 TC02 Validation error trigger and the form should redirect to the section
     Then Click Element    xpath=//span[contains(text(),'Declare & Review')]
     Sleep    2
     And Click Button     id=review-btn
+    Sleep    3
     Then Click Element    id=react-declaration-info_truthfulness_check
+    Sleep    2
     And Click Button    id=submit-btn
     Log    TestComplete    
 
@@ -219,10 +223,10 @@ I key in my Personal Address Info
    Click Button    ${SAVE} 
    
 I key in all Mandatory fields in Proposal Page
-    Input Text    id=react-project-title    ${PROJECT TITLE}  
-    Input Text    id=react-project-start_date    ${START_DATE}
-    Input Text    id=react-project-end_date    ${END_DATE}    
-    Input Text    id=react-project-description    The Business Grants Portal is a one-stop portal for businesses to apply for grants according to their needs without having to approach multiple agencies. 
+   Input Text    id=react-project-title    ${PROJECT TITLE}  
+   Input Text    id=react-project-start_date    ${START_DATE}
+   Input Text    id=react-project-end_date    ${END_DATE}    
+   Input Text    id=react-project-description    The Business Grants Portal is a one-stop portal for businesses to apply for grants according to their needs without having to approach multiple agencies. 
    Click Element   ${ACTIVITY}
    Click Element   ${ACTIVITY_LIST}   
    Input Text    id=react-project-entity_type    ${Type of Entity}
