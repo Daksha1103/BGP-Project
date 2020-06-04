@@ -11,7 +11,6 @@ ${NAME}    Tan Ah Kow
 ${UEN}    BGPQEDEMO
 
 ${CONTACT_NAME}     xpath://input[@id='react-contact_info-name']
-
 ${CONTACT_DESIGNATION}    xpath://input[@id='react-contact_info-designation']
 ${CONTACT_PHONE_NO}    xpath://input[@id='react-contact_info-phone']
 ${CONTACT_EMAIL_ID}    xpath://input[@id='react-contact_info-primary_email'] 
@@ -23,7 +22,6 @@ ${ADD_BUILDING}    123C
 ${PROJECT TITLE}   GDS
 ${START_DATE}    01 Aug 2020
 ${END_DATE}    01 Nov 2020
-# ${ACTIVITY}    Identification of Potential Overseas Partners
 ${TARGET_MARKET}    India
 ${Type of Entity}    subsidiary
 ${Percentage Shareholdings}    70 
@@ -43,9 +41,11 @@ ${OVERSEAS_INVEST_2}    350,000
 ${OVERSEAS_INVEST_3}    400,000
 ${ACTIVITY}    xpath://*[contains(text(), 'Activity')]/../../following-sibling::*//div/div/span/div[contains(text(), 'Select')]
 ${ACTIVITY_LIST}    xpath://div[text()='Market Entry']
+
+
 *** Keywords ***
+
 Applicant key in Credentials
-   [Documentation]    Verify Applicant is able to Login with his credentials for BGP
    Input Text    name=CPUID    ${NRIC}
    Input Text    name=CPUID_FullName   ${NAME}   
    Input Text    name=CPEntID    ${UEN}    
@@ -166,11 +166,12 @@ I key in all Mandatory fields in Proposal Page
 
 *** Test Cases ***
 
-Applicant Login to BGP
-   [Documentation]    This is a simple login test
-   I apply for New Grant
-   Close Browser
-   Log    TestComplete   
+Applicant Login to the BGP 
+   [Documentation]    Verify Applicant is able to Login with his credentials for BGP
+   Given Applicant open the browser
+   When Applicant key in Credentials
+   Then Close Browser
+   And Log    TestComplete   
    
 US-1 TC01 Check for Eligibility Questions for Grant Access
     [Documentation]    Verify Eligibility questions for new grant
@@ -181,7 +182,6 @@ US-1 TC01 Check for Eligibility Questions for Grant Access
     Log    TestComplete 
    
 US-1 TC02 Grant Access Not Eligible and open FAQ URL
-       
    [Documentation]    Verify the eligibility section for one negative answer and open new windown for FAQ
    Given I apply for New Grant
    When I Get New Grant
@@ -192,7 +192,6 @@ US-1 TC02 Grant Access Not Eligible and open FAQ URL
    Then Click Element    xpath://div[8]//div[1]//div[2]//label[2]//span[1]
    Then Click Link    xpath://span[contains(text(),'The applicant may not meet the eligibility criteri')]//a[contains(text(),'FAQ')]
    And Capture Page Screenshot
-  
    # Close Browser
    Log    TestComplete 
    
@@ -238,7 +237,6 @@ US-3 TC01 Form Submission
     And Click Button     id=review-btn
     Then Click Element    id=react-declaration-info_truthfulness_check
     And Click Button    id=submit-btn
-         
     Log    TestComplete 
    
 
